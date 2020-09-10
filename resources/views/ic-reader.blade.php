@@ -15,7 +15,7 @@
             </div>
             
 
-            <div class="mx-auto bg-white p-4 overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="bg-white p-4 overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="space-y-4">
                     <div class="w-1/3">
                         <label for="ic_no" class="block text-sm leading-5 font-medium text-gray-700">IC No.</label>
@@ -93,6 +93,7 @@
                         this.name = response.Data.MYKAD.GMPCName
                         this.address = `${response.Data.MYKAD.Address1}${response.Data.MYKAD.Address2 ? ' '+response.Data.MYKAD.Address2 : ''}${response.Data.MYKAD.Address3 ? ' '+response.Data.MYKAD.Address3 : ''}`
                         this.postcode = response.Data.MYKAD.Postcode
+                        this.year_of_birth = response.Data.MYKAD.DOB.split('-')[2]
                         this.gender = response.Data.MYKAD.Gender === 'L' ? 'Male' : 'Female'
                     })
                     .catch(error => {
