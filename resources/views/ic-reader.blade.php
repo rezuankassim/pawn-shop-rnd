@@ -239,14 +239,19 @@
 
                 this.getData(`http://localhost:9000/api/BT/MyKad/StartVerification?finger=${finger}&callback=?`)
                     .then(response => {
-                        console.log(response)
+                        // console.log(response)
                         this.isLoading = false
                         
-                        this.verifySuccess = true
-                        this.verifyFailed = false
+                        if (response.Data.VERIFY_STATUS === 'VERIFY_SUCCESS') {
+                            this.verifySuccess = true
+                            this.verifyFailed = false
+                        } else {
+                            this.verifyFailed = true
+                            this.verifySuccess = false
+                        }
                     })
                     .catch(error => {
-                        console.log(error)
+                        // console.log(error)
                         this.isLoading = false
 
                         this.verifyFailed = true
