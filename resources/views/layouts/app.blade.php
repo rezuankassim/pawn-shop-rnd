@@ -44,6 +44,10 @@
                                 <x-jet-nav-link href="/ic-reader" :active="request()->routeIs('ic-reader')">
                                     IC Reader
                                 </x-jet-nav-link>
+
+                                <x-jet-nav-link href="/printer" :active="request()->routeIs('printer')">
+                                    Printer
+                                </x-jet-nav-link>
                             </div>
                         </div>
 
@@ -134,6 +138,14 @@
                     <div class="pt-2 pb-3 space-y-1">
                         <x-jet-responsive-nav-link href="/dashboard" :active="request()->routeIs('dashboard')">
                             Dashboard
+                        </x-jet-responsive-nav-link>
+
+                        <x-jet-responsive-nav-link href="/ic-reader" :active="request()->routeIs('ic-reader')">
+                            IC Reader
+                        </x-jet-responsive-nav-link>
+
+                        <x-jet-responsive-nav-link href="/printer" :active="request()->routeIs('printer')">
+                            Printer
                         </x-jet-responsive-nav-link>
                     </div>
 

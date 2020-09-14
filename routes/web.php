@@ -31,4 +31,8 @@ Route::group([
     Route::get('/ic-reader', function () {
         return view('ic-reader');
     })->name('ic-reader');
+
+    Route::get('/printer', function () {
+        return view('printer');
+    })->name('printer');
 });
