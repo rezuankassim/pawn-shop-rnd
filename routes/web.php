@@ -35,4 +35,8 @@ Route::group([
     Route::get('/printer', function () {
         return view('printer');
     })->name('printer');
+
+    Route::get('/keyboard-shortcut', function () {
+        return view('keyboard-shortcut');
+    })->name('keyboard-shortcut');
 });

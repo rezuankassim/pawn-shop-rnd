@@ -48,6 +48,10 @@
                                 <x-jet-nav-link href="/printer" :active="request()->routeIs('printer')">
                                     Printer
                                 </x-jet-nav-link>
+
+                                <x-jet-nav-link href="/keyboard-shortcut" :active="request()->routeIs('keyboard-shortcut')">
+                                    Keyboard Shortcut
+                                </x-jet-nav-link>
                             </div>
                         </div>
 
@@ -146,6 +150,10 @@
 
                         <x-jet-responsive-nav-link href="/printer" :active="request()->routeIs('printer')">
                             Printer
+                        </x-jet-responsive-nav-link>
+
+                        <x-jet-responsive-nav-link href="/keyboard-shortcut" :active="request()->routeIs('keyboard-shortcut')">
+                            Keyboard Shortcut
                         </x-jet-responsive-nav-link>
                     </div>
 
