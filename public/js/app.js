@@ -19379,10 +19379,6 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
 //     forceTLS: true
 // });
 
-window.sohai = function () {
-  console.log(sohai);
-};
-
 /***/ }),
 
 /***/ "./resources/js/custom.js":
