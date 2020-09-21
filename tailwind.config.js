@@ -1,7 +1,15 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-    purge: ['./storage/framework/views/*.php', './resources/views/**/*.blade.php'],
+    future: {
+        removeDeprecatedGapUtilities: true,
+        purgeLayersByDefault: true,
+    },
+
+    purge: [
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php'
+    ],
 
     theme: {
         extend: {
