@@ -220,6 +220,7 @@
 
                 this.getData('http://localhost:9000/api/BT/MyKad/Read?callback=?')
                     .then(response => {
+                        console.log(response)
                         this.isLoading = false
                         this.icRead = true
                         this.ic_no = response.Data.MYKAD.ICNumber
@@ -239,7 +240,7 @@
 
                 this.getData(`http://localhost:9000/api/BT/MyKad/StartVerification?finger=${finger}&callback=?`)
                     .then(response => {
-                        // console.log(response)
+                        console.log(response)
                         this.isLoading = false
                         
                         if (response.Data.VERIFY_STATUS === 'VERIFY_SUCCESS') {
